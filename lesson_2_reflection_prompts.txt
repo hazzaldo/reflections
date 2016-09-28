@@ -1,8 +1,37 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-Git creates a .git directory (hidden from file explorer that stores the history versions of the directory content). 
-You need to do it so you can allow GIT version control system to keep track of you versions history of file, as you creates commits over time. 
+	Git creates a .git directory (hidden from file explorer that stores the 		history versions of the directory content). 
+	You need to do it so you can allow GIT version control system to keep track 	of you versions history of file, as you creates commits over time. 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-Working area is where you edit your work. The staging area is an intermediate area that gives you the control to add only the files you need to commit to the repository. And the repository keeps track of all committed files.
+	Working area is where you edit your work. The staging area is an intermediate 	area that gives you the control to add only the files you need to commit to 	the repository. And the repository keeps track of all committed files.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	You can control what files you want to add to before committing. You’re not 	forced to commit all the files you modified in one go.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	When you’re making an experimental addition that you’re not sure is going to 	work. Or when you want to add another feature, but you don’t want it to be 		part of the main master branch, such as another language to English or a 		different difficulty to a game.
+	You use your master branch is the main production quality working version of 	your work. And the branch is for any active development that you’re working, 	which you might want to also collaborate with others on, and incorporate into 	the production later on, once  fully tested and you wish to incorporate it 		into your main production work (master branch).
+	Another scenario is when you want to fix a big on the main production work, 	so you create a separate branch to work on fixing the bug, which you may want 	to collaborate with others on.  
+
+How do the diagrams help you visualize the branch structure?
+
+	Because I’m able to see what commits are on which branches, and on which 		commit 	I’m one. Also to know where there are unreachable. All to help me 		understand the history of data and work added and how I can proceed next to 	maintain the integrity and efficiency of the work
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The result would merge the changes from the tip of both branches together in 	one commit. It also merges all commits into the merged into branch. Because, 	the two branches are no longer converged out. They’re converged into one 		commit, and any further commits from that commit will continue in one path 		(one branch).
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Automatic merging:
+		Advantages: 
+			1. Doesn’t need to ask you about every single commit that 				maybe obvious to you
+			2. Hence also quicker
+
+		Disadvantages: 
+			1. Will start resolving merging conflicts based on what it 				thinks is right, without asking you, potentially causing major 			issues with the code.
+			
